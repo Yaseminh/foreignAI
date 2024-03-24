@@ -1,0 +1,21 @@
+.radio-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button-label {
+    margin-bottom: 10px;
+}
+
+/* İsteğe bağlı: Stil ve tasarım özellikleri ekleyebilirsiniz. */
+.blue-input {
+    background-color: #f0f0f5; /* Açık mavi rengi */
+    /* Diğer stillendirme özellikleri buraya eklenebilir */
+}
+label {
+    display: block; /* Blok düzeni sağlamak için */
+}
+
+label span {
+    float: right; /* Sağa yasla */
+}

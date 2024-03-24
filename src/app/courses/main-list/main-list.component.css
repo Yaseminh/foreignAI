@@ -1,0 +1,138 @@
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    margin-top: 10px;
+}
+
+.btn-add-book {
+    margin-top: 10px;
+}
+
+.underline-button {
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.custom-button {
+    width: 100%; /* Butonun uzunluğunu yüzde olarak ayarla */
+}
+.underline-button-blue {
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.alti-cizili {
+    text-decoration: none; /* Başlangıçta altı çizili olmasın */
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.progress-bar {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+.progress-container {
+    position: relative;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: calc(100% + 30px); /* Uzunluğu biraz daha arttırıyoruz */
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin-left: -15px; /* Progress barın içindeki dört numaralı dairenin başını göstermek için */
+}
+
+.progress-level {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.progress-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.xp-label {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+.alti-cizili:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altı çizili olsun */
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.ortalanmis-div {
+    width: 300px; /* İstediğiniz genişlik */
+    height: 200px; /* İstediğiniz yükseklik */
+
+    margin: auto; /* Yatayda ortalamak için margin: auto; kullanın */
+     /* Dikeyde ortalamak için margin-top değerini ayarlayın */
+    text-align: center; /* İçeriği yatayda ortalamak için text-align kullanın */
+    line-height: 200px; /* İçeriği dikeyde ortalamak için line-height kullanın */
+}
+.trans-button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.color-button {
+    border: none;
+    background-color: transparent;
+    color: cornflowerblue;
+    cursor: pointer;
+    font-size: 16px;
+}
+.parent-div {
+    text-align: right;
+}
+.xp-box {
+    background-color: #99c2ff;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block; /* Yazı kadar genişlikte olmasını sağlar */
+}

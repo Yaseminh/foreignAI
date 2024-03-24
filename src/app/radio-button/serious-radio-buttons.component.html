@@ -1,0 +1,11 @@
+<h4>Günlük Hedefinizi Belirleyin</h4>
+<br>
+<div class="radio-buttons-container">
+    <label *ngFor="let option of options" class="radio-button-label blue-input">
+        <input type="radio" [value]="option.value" [checked]="selectedOption === option.value" (change)="selectOption(option.value)">
+        {{ option.label }}
+        <span>{{option.value}}</span>
+    </label>
+</div>
+
+<p *ngIf="selectedOption">Seçili durum: {{ selectedOption }}</p>

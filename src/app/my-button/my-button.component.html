@@ -1,0 +1,28 @@
+<!-- my-button.component.html -->
+<button class="btn btn-light" (click)="toggleContent()">
+    06 Kas 2023 tarihinden itibaren toplam gelişim
+    <div *ngIf="showContent" class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <img style="width: 24px; height: 24px" src="assets/play-solid.svg"><span> 27</span>
+                <p class="label">Izlenen Videolar</p>
+            </div>
+            <div class="col-md-6">
+                <img style="width: 24px; height: 24px" src="assets/brain-solid.svg"><span> 23</span>
+                <p class="label">Kelime Ögrenildi</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img style="width: 24px; height: 24px" src="assets/user-ninja-solid.svg"><span> 33</span>
+                <p class="label">Satir Ögrenildi</p>
+            </div>
+            <div class="col-md-6">
+                <img style="width: 24px; height: 24px" src="assets/comments-solid.svg"><span> 63</span>
+                <p class="label">Haftalik Özel Dersler</p>
+            </div>
+        </div>
+
+    </div>
+</button>
+

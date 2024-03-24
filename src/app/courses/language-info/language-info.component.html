@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Dropdown</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container custom-container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li (click)="setActivePage('videolarim')" class="nav-item ">
+          <a class="nav-link">
+            <img src="assets/play-solid.svg"> Videolarim
+          </a>
+        </li>
+        <li (click)="setActivePage2('videolar')" class="nav-item">
+          <a  class="nav-link" >  <img src="assets/film-solid.svg"> Tüm Videolar </a>
+        </li>
+        <li  (click)="setActivePage3('onerilen')" class="nav-item">
+          <a  class="nav-link" >
+            <img src="assets/star-solid.svg"> Onerilen
+          </a>
+        </li>
+        <li (click)="setActivePage4('yeni')" class="nav-item">
+          <a  class="nav-link" >
+            <img src="assets/square-plus-solid.svg"> Yeni
+          </a>
+        </li>
+        <li [class.active]="activePage === 'ising'" (click)="setActivePage('ising')" class="nav-item">
+          <a class="nav-link" >
+            <img src="assets/briefcase-solid.svg"> Is Ingilizcesi
+          </a>
+        </li>
+
+        <li [class.active]="activePage === 'sosing'" (click)="setActivePage('sosing')" class="nav-item">
+          <a class="nav-link" >
+            <img src="assets/users-solid.svg"> Sosyal Ingilizce
+          </a>
+        </li>
+        <li [class.active]="activePage === 'seying'" (click)="setActivePage('seying')" class="nav-item">
+          <a class="nav-link" >
+            <img src="assets/plane-solid.svg"> Seyahat Ingilizcesi
+          </a>
+        </li>
+        <li [class.active]="activePage === 'aking'" (click)="setActivePage('aking')" class="nav-item">
+          <a class="nav-link" >
+            <img src="assets/school-solid.svg"> Akademik Ingilizce
+          </a>
+        </li>
+        <li [class.active]="activePage === 'cocicin'" (click)="setActivePage('cocicin')" class="nav-item">
+          <a class="nav-link" >
+            <img src="assets/child-solid.svg"> Cocuklar Icin
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        &#8230;
+      </button>
+      <ul class="dropdown-menu ">
+        <li (click)="setActivePageLang()"><button class="dropdown-item" (click)="setActivePageLang()" ><img src="assets/language-solid.svg">  Dil Bilgisi</button></li>
+        <li><button class="dropdown-item" (click)="setActivePageLang()" href="#"><img src="assets/head-side-cough-solid.svg">  Telaffuz</button></li>
+        <li><button class="dropdown-item"><img src="assets/square-solid.svg"> Yararli Kaliplar</button></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+    <p>Dil Bilgisi</p>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/is.png"  class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <p class="card-text">Video Süresi: 3:45</p>
+            <a href="#" class="card-link">Be Kind to Animals</a>
+            <p class="card-text">Bu video hakkında açıklama paragrafı burada yer alacak.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-circle">3</div>
+              </div>
+              <div class="col-md-6">
+                <p>Orta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/is.png"  class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Video Süresi: 4:30</p>
+            <a href="#" class="card-link">The Ocean Speaks</a>
+            <p class="card-text">Bu video hakkında açıklama paragrafı burada yer alacak.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-circle">3</div>
+              </div>
+              <div class="col-md-6">
+                <p>Orta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/is.png"  class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Video Süresi: 4:30</p>
+            <a href="#" class="card-link">Is too High</a>
+            <p class="card-text">Bu video hakkında açıklama paragrafı burada yer alacak.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-circle">3</div>
+              </div>
+              <div class="col-md-6">
+                <p>Orta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/is.png"  class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Video Süresi: 4:30</p>
+            <a href="#" class="card-link">The Jungle Book</a>
+            <p class="card-text">Bu video hakkında açıklama paragrafı burada yer alacak.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-circle">3</div>
+              </div>
+              <div class="col-md-6">
+                <p>Orta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/is.png"  class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Video Süresi: 4:30</p>
+            <a href="#" class="card-link">He Said That</a>
+            <p class="card-text">Bu video hakkında açıklama paragrafı burada yer alacak.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-circle">3</div>
+              </div>
+              <div class="col-md-6">
+                <p>Orta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="assets/is.png"  class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Video Süresi: 4:30</p>
+            <a href="#" class="card-link">Sherlock Holmes</a>
+            <p class="card-text">Bu video hakkında açıklama paragrafı burada yer alacak.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-circle">3</div>
+              </div>
+              <div class="col-md-6">
+                <p>Orta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
