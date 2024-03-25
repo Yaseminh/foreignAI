@@ -5,10 +5,10 @@ import House from "../../House";
 
 @Component({
   selector: 'app-house-detail',
-  templateUrl: './onerilenvideos.component.html',
-  styleUrls: ['./onerilenvideos.component.css']
+  templateUrl: './newvideos.component.html',
+  styleUrls: ['./newvideos.component.css']
 })
-export class OnerilenvideosComponent implements OnInit {
+export class NewvideosComponent implements OnInit {
   hero$!: House;
   constructor(
     private route: ActivatedRoute,
@@ -19,8 +19,16 @@ export class OnerilenvideosComponent implements OnInit {
 
   }
 
+  activePage: string = 'yeni'; // Default olarak "home" sayfasını aktif yap
+
+
+  setActivePage(page: string): void {
+    this.activePage = page;
+  }
+
+
   setActivePageLang(): void {
-    this.router.navigate(['/languageInfo']);
+    this.router.navigate(['/yenivideos']);
   }
 
 
