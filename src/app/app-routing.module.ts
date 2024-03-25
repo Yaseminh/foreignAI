@@ -3,8 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import {MainListComponent, VideoListComponent, MyvideosComponent, ListQuotesComponent} from './courses';
 import {BusinessEnglishComponent} from "./courses/businessenglish/business-english.component";
 import {AllvideosComponent} from "./courses/allvideos/allvideos.component";
-import {OnerilenvideosComponent} from "./courses/onerilenvideos/Onerilenvideos.component";
-import {YenivideosComponent} from "./courses/yeni/yenivideos.component";
+import {SuggestedvideosComponent} from "./courses/suggestedvideos/suggestedvideos.component";
+import {NewvideosComponent} from "./courses/new/newvideos.component";
+import {SocialEnglishComponent} from "./courses/socialenglish/social-english.component";
+import {TravelEnglishComponent} from "./courses/travelenglish/travel-english.component";
+import {AcademicEnglishComponent} from "./courses/academicenglish/academic-english.component";
+import {KidsvideosComponent} from "./courses/kidsvideos/kidsvideos.component";
 
 const routes: Routes = [
 
@@ -18,8 +22,12 @@ const routes: Routes = [
   { path: 'superheroes',  component: MainListComponent },
   { path: 'personheroes',  component: VideoListComponent },
   { path: 'allvideos',  component: AllvideosComponent },
-  { path: 'onerilenvideos',  component: OnerilenvideosComponent},
-  { path: 'yenivideos',  component: YenivideosComponent}
+  { path: 'suggestedvideos',  component: SuggestedvideosComponent},
+  { path: 'newvideos',  component: NewvideosComponent},
+  { path: 'socialenglish', component: SocialEnglishComponent },
+  { path: 'travelenglish', component: TravelEnglishComponent },
+  { path: 'academicenglish', component: AcademicEnglishComponent },
+  { path: 'kidsenglish', component: KidsvideosComponent}
 ];
 
 @NgModule({

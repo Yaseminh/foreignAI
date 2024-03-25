@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #7dce94;">
     <div class="container-fluid ">
-            <a routerLink="videolist" class="nav-link text-white" routerLinkActive="active">Videolar</a>
+            <a routerLink="allvideos"  (click)="setActivePage2('videolar')"   class="nav-link text-white" routerLinkActive="active">Videolar</a>
             <a routerLink="mainlist" class="nav-link text-white" routerLinkActive="active">Kurslar</a>
             <a routerLink="quotelist" class="nav-link text-white" routerLinkActive="active">Kelimeler</a>
             <a routerLink="quotelist" class="nav-link text-white" routerLinkActive="active">Konusma</a>
@@ -56,33 +56,33 @@
                     <img src="assets/star-solid.svg"> Onerilen
                 </a>
             </li>
-            <li (click)="setActivePage4('yeni')" class="nav-item">
+            <li [style.background-color]="buttonColor4"  (click)="setActivePage4('yeni')" class="nav-item">
                 <a  class="nav-link" >
                     <img src="assets/square-plus-solid.svg"> Yeni
                 </a>
             </li>
-            <li  (click)="setActivePage5('ising')" class="nav-item">
+            <li [style.background-color]="buttonColor5"   (click)="setActivePage5('ising')" class="nav-item">
                 <a class="nav-link" >
                     <img src="assets/briefcase-solid.svg"> Is Ingilizcesi
                 </a>
             </li>
 
-            <li [class.active]="activePage === 'sosing'" (click)="setActivePage('sosing')" class="nav-item">
+            <li [style.background-color]="buttonColor6"   [class.active]="activePage === 'sosing'" (click)="setActivePage6('sosing')" class="nav-item">
                 <a class="nav-link" >
                     <img src="assets/users-solid.svg"> Sosyal Ingilizce
                 </a>
             </li>
-            <li [class.active]="activePage === 'seying'" (click)="setActivePage('seying')" class="nav-item">
+            <li [style.background-color]="buttonColor7"   [class.active]="activePage === 'seying'" (click)="setActivePage7('seying')" class="nav-item">
                 <a class="nav-link" >
                     <img src="assets/plane-solid.svg"> Seyahat Ingilizcesi
                 </a>
             </li>
-            <li [class.active]="activePage === 'aking'" (click)="setActivePage('aking')" class="nav-item">
+            <li [style.background-color]="buttonColor8"  [class.active]="activePage === 'aking'" (click)="setActivePage8('aking')" class="nav-item">
                 <a class="nav-link" >
                     <img src="assets/school-solid.svg"> Akademik Ingilizce
                 </a>
             </li>
-            <li [class.active]="activePage === 'cocicin'" (click)="setActivePage('cocicin')" class="nav-item">
+            <li [style.background-color]="buttonColor9" [class.active]="activePage === 'cocicin'" (click)="setActivePage9('cocicin')" class="nav-item">
                 <a class="nav-link" >
                     <img src="assets/child-solid.svg"> Cocuklar Icin
                 </a>
