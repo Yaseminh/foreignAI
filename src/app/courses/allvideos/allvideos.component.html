@@ -13,7 +13,69 @@
 
   <div > <!-- Content for Tüm Videolar Page -->
     <div class="container custom-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li [style.background-color]="buttonColor"  (click)="setActivePage('videolarim')" class="nav-item ">
+              <a class="nav-link">
+                <img src="assets/play-solid.svg"> Videolarim
+              </a>
+            </li>
+            <li [style.background-color]="'#3498db'"   (click)="setActivePage2('videolar')" class="nav-item">
+              <a  class="nav-link" >  <img src="assets/film-solid.svg"> Tüm Videolar </a>
+            </li>
+            <li [style.background-color]="buttonColor3"  (click)="setActivePage3('onerilen')" class="nav-item">
+              <a  class="nav-link" >
+                <img src="assets/star-solid.svg"> Onerilen
+              </a>
+            </li>
+            <li [style.background-color]="buttonColor4"  (click)="setActivePage4('yeni')" class="nav-item">
+              <a  class="nav-link" >
+                <img src="assets/square-plus-solid.svg"> Yeni
+              </a>
+            </li>
+            <li [style.background-color]="buttonColor5"   (click)="setActivePage5('ising')" class="nav-item">
+              <a class="nav-link" >
+                <img src="assets/briefcase-solid.svg"> Is Ingilizcesi
+              </a>
+            </li>
 
+            <li [style.background-color]="buttonColor6"   [class.active]="activePage === 'sosing'" (click)="setActivePage6('sosing')" class="nav-item">
+              <a class="nav-link" >
+                <img src="assets/users-solid.svg"> Sosyal Ingilizce
+              </a>
+            </li>
+            <li [style.background-color]="buttonColor7"   [class.active]="activePage === 'seying'" (click)="setActivePage7('seying')" class="nav-item">
+              <a class="nav-link" >
+                <img src="assets/plane-solid.svg"> Seyahat Ingilizcesi
+              </a>
+            </li>
+            <li [style.background-color]="buttonColor8"  [class.active]="activePage === 'aking'" (click)="setActivePage8('aking')" class="nav-item">
+              <a class="nav-link" >
+                <img src="assets/school-solid.svg"> Akademik Ingilizce
+              </a>
+            </li>
+            <li [style.background-color]="buttonColor9" [class.active]="activePage === 'cocicin'" (click)="setActivePage9('cocicin')" class="nav-item">
+              <a class="nav-link" >
+                <img src="assets/child-solid.svg"> Cocuklar Icin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            &#8230;
+          </button>
+          <ul class="dropdown-menu ">
+            <li (click)="setActivePageLang()"><button class="dropdown-item" (click)="setActivePageLang()" ><img src="assets/language-solid.svg">  Dil Bilgisi</button></li>
+            <li><button class="dropdown-item" (click)="setActivePageLang()" href="#"><img src="assets/head-side-cough-solid.svg">  Telaffuz</button></li>
+            <li><button class="dropdown-item"><img src="assets/square-solid.svg"> Yararli Kaliplar</button></li>
+          </ul>
+        </div>
+      </nav>
       <div> <!-- Content for Videolarim Page -->
         <p>Is Ingilizcesi</p>
         <div class="row">

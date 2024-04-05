@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import { Router } from "@angular/router";
 import {GameOfThronesService} from "./services";
@@ -28,6 +28,9 @@ export class AppComponent {
   buttonColor7: string = '';
   buttonColor8: string = '';
   buttonColor9: string = '';
+
+
+
 
   setActivePage(page: string): void {
     this.buttonColor = '#3498db';
@@ -64,6 +67,7 @@ export class AppComponent {
     this.buttonColor8 = '';
     this.router.navigate(['/suggestedvideos']);
   }
+
   setActivePage4(page: string): void {
     this.buttonColor = '';
     this.buttonColor2 = '';
